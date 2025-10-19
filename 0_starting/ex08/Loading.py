@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Loading.py — ft_tqdm : barre de progression façon tqdm, via un générateur (yield).
+Loading.py — ft_tqdm : barre de progression façon tqdm,
+via un générateur (yield).
 """
 
 from __future__ import annotations
@@ -33,7 +34,8 @@ def ft_tqdm(lst: range) -> Generator[int, None, None]:
 
     Notes :
     - Utilise `yield` pour rester paresseux (lazy) comme tqdm.
-    - Se focalise sur les éléments essentiels (%, barre, compteur, elapsed, ETA, it/s).
+    - Se focalise sur les éléments essentiels (%, barre, compteur,
+    elapsed, ETA, it/s).
     - Prévu pour un objet `range` (total connu).
     """
     total = len(lst)
@@ -44,7 +46,8 @@ def ft_tqdm(lst: range) -> Generator[int, None, None]:
         sys.stdout.write("\n")
         return
 
-    bar_len = 30  # longueur de la barre (tqdm ≈ 28, on prend 30 pour la lisibilité)
+    bar_len = 30  # longueur de la barre (tqdm ≈ 28,
+    # on prend 30 pour la lisibilité)
     start = time.time()
 
     for idx, item in enumerate(lst, start=1):
@@ -64,7 +67,7 @@ def ft_tqdm(lst: range) -> Generator[int, None, None]:
         spent = _format_time(elapsed)
 
         # Ligne de statut (proche de tqdm)
-        # Ex: " 42%|██████▌                    | 140/333 [00:00<00:01, 214.73it/s]"
+        # Ex: " 42%|██████▌               | 140/333 [00:00<00:01, 214.73it/s]"
         line = (
             f"{percent:3d}%|{bar}| {idx}/{total} "
             f"[{spent}<{left}, "

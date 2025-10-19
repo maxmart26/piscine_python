@@ -1,18 +1,22 @@
 # ft_package
 
-A sample test package.
+A sample test package for the 42 Piscine.
 
-- Name: **ft_package**
-- Version: **0.0.1**
-- Author: **eagle** <eagle@42.fr>
-- License: **MIT**
-- Homepage: https://github.com/eagle/ft_package
+Example usage:
 
-## Usage
+```python
+from ft_package import count_in_list
 
-```bash
-python -c "from ft_package import hello; print(hello('chou'))"
-# Hello, chou!
+print(count_in_list(["toto", "tata", "toto"], "toto"))  # 2
+print(count_in_list(["toto", "tata", "toto"], "tutu"))  # 0
 
-ft-hello chou
-# Hello, chou!
+
+
+
+## 🧱 Build ton package
+    ##Depuis le dossier `ex09/` :
+
+
+##```python
+python -m pip install --upgrade build
+python -m build
