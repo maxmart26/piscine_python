@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: ft_package
+Version: 0.0.1
+Summary: A sample test package
+Author-email: eagle <eagle@42.fr>
+License: MIT
+Project-URL: Homepage, https://github.com/eagle/ft_package
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# ft_package
+
+A sample test package.
+
+- Name: **ft_package**
+- Version: **0.0.1**
+- Author: **eagle** <eagle@42.fr>
+- License: **MIT**
+- Homepage: https://github.com/eagle/ft_package
+
+## Usage
+
+```bash
+python -c "from ft_package import hello; print(hello('chou'))"
+# Hello, chou!
+
+ft-hello chou
+# Hello, chou!

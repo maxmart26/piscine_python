@@ -1,6 +1,6 @@
 # 0_starting/Makefile
 DC  := docker compose
-
+MAKEFLAGS += --no-print-directory
 EXO ?= ex00
 PY  ?=
 ARGS ?=
@@ -76,6 +76,12 @@ ex05:
 
 ex06:
 	$(MAKE) run EXO=ex06 PY=filterstring.py ARGS="$(ARGS)"
+
+ex07:
+	$(MAKE) run EXO=ex07 PY=sos.py ARGS="$(ARGS)"
+
+ex08:
+	$(MAKE) run EXO=ex08 PY=Loading.py ARGS="$(ARGS)"
 
 # Shell rapide dans un exo
 sh-%:

@@ -1,0 +1,2 @@
+[console_scripts]
+ft-hello = ft_package.cli:main
