@@ -1,0 +1,9 @@
+# 0_starting/requirements.txt
+# runtime
+# (ajoute ici si besoin: requests, numpy, etc.)
+
+# dev
+pytest
+black
+isort
+flake8

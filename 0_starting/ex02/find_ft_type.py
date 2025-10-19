@@ -1,24 +1,23 @@
 def all_thing_is_obj(object: any) -> int:
-    if type(object) == list:
+    if type(object) is list:
         print(f"List : {type(object)}")
-    elif type(object) == tuple:
+    elif type(object) is tuple:
         print(f"Tuple : {type(object)}")
-    elif type(object) == set:
+    elif type(object) is set:
         print(f"Set : {type(object)}")
-    elif type(object) == dict:
+    elif type(object) is dict:
         print(f"Dict : {type(object)}")
-    elif type(object) == str:
+    elif type(object) is str:
         print(f"{object} is in the kitchen : {type(object)}")
     else:
         print("Type not found")
     return 42
 
 
-
 ft_list = ["Hello", "tata!"]
 ft_tuple = ("Hello", "toto!")
 ft_set = {"Hello", "tutu!"}
-ft_dict = {"Hello" : "titi!"}
+ft_dict = {"Hello": "titi!"}
 all_thing_is_obj(ft_list)
 all_thing_is_obj(ft_tuple)
 all_thing_is_obj(ft_set)

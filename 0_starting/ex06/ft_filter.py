@@ -9,6 +9,7 @@ Usage:
     ft_filter(function, iterable)
 """
 
+
 def ft_filter(function, iterable):
     """
     Imitation de la fonction filter().

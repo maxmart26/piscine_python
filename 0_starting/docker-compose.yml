@@ -1,0 +1,15 @@
+# 0_starting/docker-compose.yml
+services:
+  app:
+    build:
+      context: .
+    working_dir: /app
+    volumes:
+      - ./:/app:rw
+      - pip-cache:/root/.cache/pip
+    stdin_open: true
+    tty: true
+    # Pas de user:, pas d'args UID/GID
+
+volumes:
+  pip-cache:

@@ -17,7 +17,8 @@ import string
 
 def count_characters(text: str) -> dict:
     """
-    Compte les majuscules, minuscules, ponctuations, chiffres et espaces dans le texte.
+    Compte les majuscules, minuscules, ponctuations,
+    chiffres et espaces dans le texte.
 
     Args:
         text (str): La chaîne de caractères à analyser.
